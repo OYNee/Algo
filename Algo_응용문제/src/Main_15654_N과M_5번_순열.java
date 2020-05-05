@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * 제출까지 걸린 시간: 9분
  * + 입력부에서 실수 한 번 있었음
  */
-public class Main_15654_N과M_5번 {
+public class Main_15654_N과M_5번_순열 {
 	static int N, M, arr[], ans[];
 	static boolean[] visited;
 	static StringBuilder sb = new StringBuilder();
