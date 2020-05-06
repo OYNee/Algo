@@ -20,7 +20,7 @@ public class BinaryCounting_부분집합 {
 			for (int j = 0; j < N; j++) {
 				// 원소의 수만큼 비트를 비교함
 				if ((i & (1 << j)) != 0) {	// i의 j번째 비트가 1이면 j번째 원소 출력
-					System.out.printf("%d ", arr[j]);
+					System.out.print(arr[j]+" ");
 				}
 			}
 			System.out.println();
