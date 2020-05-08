@@ -45,6 +45,7 @@ public class Main_15652_N과M_4번_중복조합 {
 
 	}
 
+	// 예전 코드
 	public static void dfs(int n) {
 		if (n == M) {
 			for (int i = 0; i < M; i++) {

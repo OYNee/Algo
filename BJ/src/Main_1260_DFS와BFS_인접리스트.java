@@ -9,11 +9,11 @@ import java.util.StringTokenizer;
 /*
  * 작성자: 오유민
  * 작성 날짜: 20200506
- * 키워드: dfs & bfs
+ * 키워드: dfs & bfs &인접리스트
  * 난이도: Silver I
  * 제출까지 걸린 시간: 41분 23초
  */
-public class Main_1260_DFS와BFS {
+public class Main_1260_DFS와BFS_인접리스트 {
 	static int N, M, V;
 	static StringBuilder sb = new StringBuilder();
 	static List<Integer>[] arr;

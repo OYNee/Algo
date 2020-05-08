@@ -3,12 +3,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
+
 /*
- * 1일차: 5분
+ * 1일차: 5분	(조합)
+ * 2일차: 4분 31초 (중복조합)
+ * 3일차: 3분 56초 (조합)
  */
 public class Combination_재귀 {
 	static int N, M, arr[], print[];
-	static StringBuilder sb =new StringBuilder();
+	static StringBuilder sb = new StringBuilder();
+
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
@@ -21,11 +25,10 @@ public class Combination_재귀 {
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
 		Arrays.sort(arr);
-		
-		comb(0,0);
-		
+		comb(0, 0);
 		System.out.println(sb.toString());
 	}
+
 	private static void comb(int depth, int cnt) {
 		if (cnt == M) {
 			for (int i = 0; i < M; i++) {
@@ -38,8 +41,8 @@ public class Combination_재귀 {
 			return;
 		}
 		print[cnt] = arr[depth];
-		comb(depth+1, cnt+1);
-		comb(depth+1, cnt);
+		comb(depth + 1, cnt + 1);
+		comb(depth + 1, cnt);
 	}
 
 }
