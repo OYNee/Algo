@@ -34,7 +34,6 @@ public class Main_6987_월드컵 {
 			for (int i = 0; i < 6; i++) {
 				for (int j = 0; j < 3; j++) {
 					if (rt[i][j] > 0) {
-						valid = 0;
 						return;
 					}
 				}
