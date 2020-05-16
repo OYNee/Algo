@@ -17,6 +17,7 @@ public class Main_9663_NQueens {
 		if (r == N) {
 			++ans;
 //			System.out.println("ans" + ans);
+//			print();
 			return;
 		}
 		for (int c = 0; c < N; c++) { // c를 늘려나가면서 검사
